@@ -3,6 +3,7 @@ import Login from "./pages/Login";
 import { BrowserRouter, Switch} from "react-router-dom";
 import RouteAuth from "./routes/Route";
 import Dashboard from "./pages/Dashboard";
+import "./App.css";
 
 function App() {
   return( 

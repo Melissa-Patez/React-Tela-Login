@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
+import "./index.css";
+import imagem from "../../assets/background.png"
 
 import api from "../../services/api";
 
@@ -25,6 +27,8 @@ const Login: React.FC = () => {
 
   return (
    <div className="container">
+      <img className="img" src={imagem}/>
+
       <div className="fieldset">
         <h1>Sign in</h1>
 
