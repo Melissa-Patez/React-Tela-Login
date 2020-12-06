@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import "./index.css";
 import imagem from "../../assets/background.png"
 
+
 import api from "../../services/api";
 
 const Login: React.FC = () => {
@@ -46,7 +47,7 @@ const Login: React.FC = () => {
           onChange={(e)=>{setPassword(e.target.value)}}
         />
 
-        <div onClick={()=>{setShowPassword(!showPassword)}} >Mostrar Senha</div>
+        <div className="mostrarSenha" onClick={()=>{setShowPassword(!showPassword)}} >Mostrar Senha</div>
 
         <hr/>
         <button onClick={handleButton}>Enter</button>

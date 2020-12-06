@@ -2,6 +2,7 @@
     height: 100vh;
     display: flex;
     align-items: stretch;
+    
 }
 
 .fieldset{
@@ -17,8 +18,21 @@
 }
 
 .fieldset input{
-    border:     ;
+    border: 1.5;
     margin: 18px;
     height: 30px;
     width:  50%;
+}
+
+.mostrarSenha{
+    color: #1065eb;
+    margin-right: 210px;
+
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    border-radius: 9px;
+    background-color: white;
 }
