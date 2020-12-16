@@ -1,0 +1,78 @@
+.Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  animation-name: up;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in-out;
+  background-color: #ffffff;
+ 
+}
+
+.Form{
+  width: 400px;
+  background: #e3e3e3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.Form input{
+  flex: 1;
+    height: 46px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    color: #777;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.mostrarSenha{
+  color: #1065eb;
+  margin-right: 210px;
+
+}
+
+button{
+  color: #fff;
+  font-size: 16px;
+  background: #1486ff;
+  height: 56px;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  transition: 200ms;
+
+}
+
+button:hover {
+  background: #03368a;
+}
+
+
+h1{
+    color: blue;
+    margin-bottom: 15px;
+    border: 3px solid #fafafa;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    animation-name: up;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-bottom: 1px solid #1486ff;
+  width: 100%;
+}
+
+

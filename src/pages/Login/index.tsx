@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
-import "./index.css";
-import imagem from "../../assets/background.png"
-
+import "./styles.css";
 
 import api from "../../services/api";
 
@@ -12,7 +10,8 @@ const Login: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const [showPassword, setShowPassword] = useState(false);
+ 
+  const [showPassword] = useState(false);
 
   const history = useHistory();
 
@@ -27,34 +26,30 @@ const Login: React.FC = () => {
   }
 
   return (
-   <div className="container">
-      <img className="img" src={imagem}/>
+    <div className="Container">
 
-      <div className="fieldset">
-        <h1>Sign in</h1>
+      <div className="Form ">
+          <h1>Login</h1>
 
-        <input 
-          type="text"
-          placeholder="Email"
-          value={email}
-          onChange={(e)=>{setEmail(e.target.value)}}
-        />
+          <input 
+            type="text"
+            placeholder="Email"
+            value={email}
+            onChange={(e)=>{setEmail(e.target.value)}}
+          />
 
-        <input 
-          type={showPassword? 'text' : 'password'} 
-          placeholder="Password"
-          value={password}
-          onChange={(e)=>{setPassword(e.target.value)}}
-        />
+          <input 
+            type={showPassword? 'text' : 'password'} 
+            placeholder="Password"
+            value={password}
+            onChange={(e)=>{setPassword(e.target.value)}}
+          />
 
-        <div className="mostrarSenha" onClick={()=>{setShowPassword(!showPassword)}} >Mostrar Senha</div>
-
-        <hr/>
-        <button onClick={handleButton}>Enter</button>
-        
+          <hr/>
+          <button onClick={handleButton}>Enter</button>
+          
       </div> 
-
-   </div>
+    </div>
   );
 }
   //export component for external use 
